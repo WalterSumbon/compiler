@@ -166,7 +166,7 @@ class Node:
         if len(self.items) == 0:
             self.uid = -1
             return True
-        if self in parser.nodes: #是否有效排重了???
+        if self in parser.nodes:    #
             self.uid = parser.nodes.index(self)
             return True 
         else:
@@ -369,4 +369,4 @@ if __name__ == '__main__':
         for node in slr.nodes:
             print(node)
             print(node.neighbors)
-            print("="*36)
+            print("="*36z)
